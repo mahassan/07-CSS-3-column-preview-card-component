@@ -1,0 +1,84 @@
+@import url('./reset.css');
+@import url('./variable.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+main{
+    margin:2.16rem;
+}
+li{
+    color:#fff;
+    padding:4.16rem;
+    list-style: none;
+}
+@media screen and (min-width:400px) {
+    ul{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+    }
+    li{
+        min-height: 35.75rem;
+        border-radius: 0;
+    }
+    p{
+        min-height:14.5rem ;
+    }
+}
+li:first-of-type{
+ background-color: hsl(31, 77%, 52%);
+ border-top-left-radius: 0.33rem;
+ border-top-right-radius: 0.33rem;
+}
+li:first-of-type button{
+    color: hsl(31, 77%, 52%);
+}
+li:nth-child(2){
+ background-color: hsl(184, 100%, 22%);
+}
+li:nth-child(2) button{
+    color: hsl(184, 100%, 22%);
+}
+li:nth-child(3){
+ background-color: hsl(179, 100%, 13%);
+ border-bottom-left-radius: 0.33rem;
+ border-bottom-right-radius: 0.33rem;
+}
+li:nth-child(3) button{
+    color: hsl(179, 100%, 13%);
+}
+button{
+    background-color: #fff;
+    padding:1.33rem;
+    margin-top:2.5rem;
+    border: 0;
+    border-radius:2.5rem ;
+    font-size: 1.25rem; 
+    transition: background 3s;
+}
+li button:hover{
+    border: 0.16rem solid #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+li:first-of-type button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+}
+li:nth-child(2) button:hover{
+    background-color: hsl(184, 100%, 22%);
+   }
+p{
+    margin-top:3.33rem;
+    font-size: 1.25rem;
+}
