@@ -13,6 +13,7 @@ body{
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Hanken Grotesk', sans-serif;
     font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
 }
 main{
     margin:2.16rem;
@@ -22,7 +23,7 @@ li{
     padding:4.16rem;
     list-style: none;
 }
-@media screen and (min-width:400px) {
+@media screen and (min-width:31.24rem) {
     ul{
         display:grid;
         grid-template-columns:repeat(3, 1fr);
@@ -40,13 +41,13 @@ li:first-of-type{
  border-top-left-radius: 0.33rem;
  border-top-right-radius: 0.33rem;
 }
-li:first-of-type button{
+li:first-of-type a{
     color: hsl(31, 77%, 52%);
 }
 li:nth-child(2){
  background-color: hsl(184, 100%, 22%);
 }
-li:nth-child(2) button{
+li:nth-child(2) a{
     color: hsl(184, 100%, 22%);
 }
 li:nth-child(3){
@@ -54,30 +55,33 @@ li:nth-child(3){
  border-bottom-left-radius: 0.33rem;
  border-bottom-right-radius: 0.33rem;
 }
-li:nth-child(3) button{
+li:nth-child(3) a{
     color: hsl(179, 100%, 13%);
 }
-button{
+li a{
+    text-decoration: none;
     background-color: #fff;
     padding:1.33rem;
     margin-top:2.5rem;
-    border: 0;
+    border: 0.16rem solid #fff;
     border-radius:2.5rem ;
     font-size: 1.25rem; 
-    transition: background 3s;
+    transition: background 2s, color 2s;
 }
-li button:hover{
-    border: 0.16rem solid #fff;
+li a:hover{
     cursor: pointer;
     box-sizing: border-box;
-}
-li:first-of-type button:hover{
-    background-color: hsl(31, 77%, 52%);
     color: #fff;
 }
-li:nth-child(2) button:hover{
+li:first-of-type a:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+li:nth-child(2) a:hover{
     background-color: hsl(184, 100%, 22%);
    }
+li:nth-child(3) a:hover{
+    background-color: hsl(179, 100%, 13%);
+}
 p{
     margin-top:3.33rem;
     font-size: 1.25rem;
