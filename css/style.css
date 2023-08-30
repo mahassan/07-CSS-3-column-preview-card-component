@@ -32,9 +32,6 @@ li{
         min-height: 35.75rem;
         border-radius: 0;
     }
-    p{
-        min-height:14.5rem ;
-    }
 }
 li:first-of-type{
  background-color: hsl(31, 77%, 52%);
@@ -67,6 +64,7 @@ li a{
     border-radius:2.5rem ;
     font-size: 1.25rem; 
     transition: background 2s, color 2s;
+    display: inline-block;
 }
 li a:hover{
     cursor: pointer;
